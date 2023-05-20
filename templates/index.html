@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New Chat</title>
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <link
+      rel="shortcut icon"
+      href="https://chat.openai.com/favicon.ico"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body class="bg-chatbg-50 overflow-hidden text-white">
+    <div class="flex h-[100vh]">
+      <div class="left  bg-chatbg3-50 w-2/12">
+        
+        <div class="flex flex-col max-w-[320px]">
+          <button
+            class="border-solid w-[75] text-base border-white border-2 py-2 px-2 rounded-lg hover:bg-chatbg3-50 mx-2 my-2">
+            New Chat
+          </button>
+
+        </div>
+      </div>
+      <div class="right overflow-y-auto w-10/12 flex justify-center items-center flex-col">
+       
+       
+       
+       
+       
+       
+       
+       
+       
+       
+        
+        
+        <!-- chat gpt full page -->
+        
+        <div class="flex mainpage flex-wrap flex-col">
+          <div class="itemrow flex py-5 w-[53vw] flex-col justify-around">
+            <div class="flex justify-between space-y-40 flex-col">
+              <div class="w-full text-center text-5xl font-bold">BARD AI</div>
+              <div class="flex flex-row">
+                
+                <!-- example -->
+                <div class="example flex mb-64 flex-col justify-center mx-2 items-center">
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6" 
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle cx="12" cy="12" r="5"></circle>
+                    <line x1="12" y1="1" x2="12" y2="3"></line>
+                    <line x1="12" y1="21" x2="12" y2="23"></line>
+                    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                    <line x1="1" y1="12" x2="3" y2="12"></line>
+                    <line x1="21" y1="12" x2="23" y2="12"></line>
+                    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                  </svg>
+                  <div>Examples</div>
+                  <div class="flex flex-col max-w-[320px]">
+                    <button  onclick="dummy('1')"
+                      class="button1 bg-chatbg2-50 py-4 px-3 rounded-md hover:bg-chatbg3-50 my-2"
+                    >
+                      Explain quantum computing in simple terms
+                    </button>
+                    <button onclick="dummy('2')"
+                      class="button2 bg-chatbg2-50 py-4 px-3 rounded-md hover:bg-chatbg3-50 my-2"
+                    >
+                      Got any creative ideas for a 10 year old&rsquo;s birthday?
+                    </button>
+                    <button onclick="dummy('3')"
+                      class="button3 bg-chatbg2-50 py-4 px-3 rounded-md hover:bg-chatbg3-50 my-2"
+                    >
+                      How do I make an HTTP request in Javascript?
+                    </button>
+                  </div>
+                </div>
+                <!-- capabilities -->
+                <div
+                  class="capabilities mb-64 flex flex-col justify-center mx-2 items-center"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="h-6 w-6"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+                    ></path>
+                  </svg>
+                  <div>Capabilities</div>
+                  <div class="flex flex-col max-w-[320px]">
+                    <button onclick="dummy('4')"
+                      class="button4 bg-chatbg2-50 py-4 px-3 rounded-md hover:bg-chatbg3-50 my-2"
+                    >
+                    Can help with homework questions and research.
+                    
+                    </button>
+                    <button onclick="dummy('5')"
+                      class="button5 bg-chatbg2-50 py-4 px-3 rounded-md hover:bg-chatbg3-50 my-2"
+                    >
+                    Can provide creative ideas for a variety of topics.
+                    
+                    </button>
+                    <button onclick="dummy('6')"
+                      class="button6 bg-chatbg2-50 py-4 px-3 rounded-md hover:bg-chatbg3-50 my-2"
+                    >
+                    Can answer questions about programming and technology.
+                    </button>
+                  </div>
+                </div>
+                <!-- limitations -->
+                <div
+                  class="limitations mb-64 flex flex-col justify-center mx-2 items-center"
+                >
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                    ></path>
+                    <line x1="12" y1="9" x2="12" y2="13"></line>
+                    <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                  </svg>
+                  <div>Limitations</div>
+                  <div class="flex flex-col max-w-[320px]">
+                    <button onclick="dummy('7')"
+                      class="button7 bg-chatbg2-50 py-4 px-3 rounded-md hover:bg-chatbg3-50 my-2"
+                    >
+                      Can produce inaccurate information about people.
+                    </button>
+                    <button onclick="dummy('8')"
+                      class="button8 bg-chatbg2-50 py-4 px-3 rounded-md hover:bg-chatbg3-50 my-2"
+                    >
+                      Can produce inaccurate information about places.
+                    </button>
+                    <button onclick="dummy('9')"
+                      class="button9 bg-chatbg2-50 py-4 px-3 rounded-md hover:bg-chatbg3-50 my-2"
+                    >
+                      Can produce inaccurate information about facts.
+                    </button>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        <!-- flex flex-col bg-black w-[50vw] min-w-[200px] max-w-[850px] mt-7 -->
+        
+          <!-- chat page full part -->
+          <div class="chats flex flex-col w-full items-center ">
+      
+          </div>
+        
+        
+        
+        
+        
+        <div id="myin" class="flex fixed bottom-9 flex-col items-end">
+          <!-- input -->
+          <input
+          value=""
+            class="myInput outline-none  shadow-custom w-full p-2 shadow-custom bg-chatbg2-50 rounded-sm"
+            type="text"
+          />
+          <button onclick="sendbtn()" class="buttern disabled -top-10 z-[1] relative p-3 m-0">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-4 w-4 mr-1"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+          <div class="w-[50vw] text-center text-sm">
+            This AI is created by Nikunja under license from Google LLC. Alphabet Inc. holds no responsibility for the AI's actions.
+            <!-- write some cool sentence -->
+            UI is inspired by <a target="_blank" href="https://chat.openai.com/"></a>OpenAI's chat UI </a>. But the query fetch is written from <a target="_blank" href="https://bard.google.com/">Google BARD AI.</a> 
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
