@@ -105,7 +105,7 @@ lastPElement.innerHTML = answer;
 
 async function getAnswer(question) {
   try {
-    const response = await fetch("http://xnikunja.pythonanywhere.com/ask", {
+    const response = await fetch("https://xnikunja.pythonanywhere.com/ask", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
