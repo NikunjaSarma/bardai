@@ -74,7 +74,9 @@ def ask_bard(session, message):
     return results
 @app.route('/ask', methods=['POST'])
 def ask_question():
-    session_id = "VwjiySoTSh4CwFTpa4ArhxuDCkzzIvGwOkWUPsVUb-bh_szQAt4h25KKymDOu-c6CCVL_A."
+    
+    # add id
+    session_id = "ADD Your ID"
     session = requests.Session()
     session.cookies.set("__Secure-1PSID", session_id)
 
